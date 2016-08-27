@@ -1,4 +1,7 @@
-<img src="{{ album.album_logo }}">
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}">
+
+<img src="{{ album.album_logo }}" height="300px">
 
 <h1>Artist: {{ album.artist }}</h1>
 <h2>Title: {{ album.album_title }}</h2>
